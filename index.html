@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ガチャシミュレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ガチャシミュレーター</h1>
+        <div class="button-container">
+            <button id="drawButton">ガチャを引く（5回）</button>
+            <button id="resetButton">初期化</button>
+        </div>
+
+        <div id="resultArea">
+            <h2>今回の結果</h2>
+            <div id="resultItems"></div>
+        </div>
+
+         <div class="counter-container">
+            <p>総抽選回数: <span id="totalDrawCount">0</span>回</p>
+            <p>B/Cグループ当選カウンター: <span id="bcGroupCount">0</span>回</p>
+            <p>A1グループ当選カウンター: <span id="a1GroupCount">0</span>回</p>
+            <p>使った金額: <span id="totalCost">0</span>金</p>
+        </div>
+
+        <div id="historyArea">
+            <h2>履歴</h2>
+            <h3>抽選履歴</h3>
+            <ul id="drawHistory"></ul>
+            <h3>グループ別当選履歴</h3>
+            <ul id="groupHistory"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
