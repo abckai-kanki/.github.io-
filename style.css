@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E6F3FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 1000px; /* 初期サイズを固定 */
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed; /* 位置を固定 */
+    top: 20px; /* 上からの距離 */
+    left: 50%; /* 水平方向の中央 */
+    transform: translateX(-50%); /* 中央揃えのための調整 */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.outline {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+button.outline:hover {
+    background-color: #f0f0f0;
+}
+
+.result-container, .history-container, .stats-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* 背景色を追加 */
+}
+
+
+.result-container h3, .history-container h3, .stats-container h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #000; /* 縁取り文字 */
+}
+
+.result-items, .history-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.result-items span, .history-items span {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000; /* 縁取り文字 */
+}
+
+.stats-container p {
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px #000; /* 縁取り文字 */
+}
+
+.stats-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.stats-items div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-items span {
+    font-weight: bold;
+     text-shadow: 1px 1px 2px #000; /* 縁取り文字 */
+}
